@@ -377,7 +377,6 @@ public class ImportController {
                             } else if (field.getType().isAssignableFrom(boolean.class)) {
                                 obj.put(field.getName(), cell.getBooleanCellValue());
                             } else if (field.getType().isAssignableFrom(String.class)) {
-                                log.error(field.getName() + " is error");
                                 obj.put(field.getName(), cell.getStringCellValue());
                             } else if (field.getType().isAssignableFrom(List.class)) {
                                 ParameterizedType integerListType = (ParameterizedType) field.getGenericType();
