@@ -9,4 +9,9 @@ public class MPvpSkill extends MasterModel {
     public String name;
     public String description;
     public String iconPath;
+    public float damage;
+    public float extraValue;
+    public float effectRound;
+    public String effectType;
+    public String targetType;
 }

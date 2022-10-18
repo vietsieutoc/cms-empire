@@ -347,9 +347,13 @@ public class ImportController {
                         ObjectNode obj = objectMapper.createObjectNode();
                         for (int j = 0; j < declaredFields.size(); j++) {
                             Cell cell = row.getCell(j);
+
+                            if (cell == null)
+                                continue;
+
                             Field field = declaredFields.get(j);
-                            colNum = cell.getColumnIndex();
                             fieldName = field.getName();
+                            colNum = cell.getColumnIndex();
                             cellType = cell.getCellType() == Cell.CELL_TYPE_NUMERIC ? "NUMERIC"
                                     : cell.getCellType() == Cell.CELL_TYPE_STRING ? "STRING"
                                     : cell.getCellType() == Cell.CELL_TYPE_FORMULA ? "FORMULA"
