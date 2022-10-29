@@ -14,4 +14,7 @@ public class MPvpSkill extends MasterModel {
     public float effectRound;
     public String effectType;
     public String targetType;
+    public int roundLimit;
+    public int battleLimit;
+
 }
