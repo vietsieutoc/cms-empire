@@ -21,4 +21,5 @@ public class MHero extends MasterModel {
     public float pvpHp;
     public float pvpSpeed;
     public List<String> skillIds;
+    public List<String> pvpSkills;
 }
