@@ -3,10 +3,9 @@ package com.yuri.empire.models.setting;
 import com.yuri.empire.models.enumz.GachaType;
 import com.yuri.empire.models.enumz.PriceType;
 import com.yuri.empire.models.master.MasterModel;
-import org.springframework.stereotype.Component;
-
 import java.util.Date;
 import java.util.List;
+import org.springframework.stereotype.Component;
 
 @Component
 public class SGacha extends MasterModel {
@@ -20,4 +19,5 @@ public class SGacha extends MasterModel {
     public Date endAt;
     public String description;
     public String title;
+    public String poolTitle;
 }
