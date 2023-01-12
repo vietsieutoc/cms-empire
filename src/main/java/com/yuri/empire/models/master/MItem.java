@@ -1,7 +1,8 @@
 package com.yuri.empire.models.master;
 
-import com.yuri.empire.models.BaseModel;
+import com.yuri.empire.models.enumz.ItemCurrency;
 import com.yuri.empire.models.enumz.ItemType;
+import com.yuri.empire.models.enumz.RarityType;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
@@ -18,4 +19,7 @@ public class MItem extends MasterModel {
     public float value;
     public float effectValue;
     public String icon;
+    public RarityType rarity;
+    public float sellValue;
+    public ItemCurrency sellCurrency;
 }
